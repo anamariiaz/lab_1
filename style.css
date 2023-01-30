@@ -1,0 +1,43 @@
+/* specify colors for text with class heading 1, heading 2, heading 3, heading 4, paragraph, unordered list and form, respectively */
+
+h1 { 
+    color: turquoise; 
+} 
+
+h2 { 
+    color: turquoise; 
+} 
+
+h3 { 
+    color: turquoise; 
+} 
+
+h4 { 
+    color: #FFB6C1; 
+} 
+
+p {
+    color: white
+}
+
+ul {
+    color: white
+}
+
+form {
+    color: white
+}
+
+/* specify the background color of the pages */
+
+body {
+    background-color: black; 
+
+}
+
+/* specify the background and border color of the buttons */
+
+.btn-primary {
+    background-color: white; 
+    border-color: black; 
+}

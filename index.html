@@ -1,0 +1,243 @@
+<!-- specify the doctype as html such that this file is interpretable -->
+<!DOCTYPE html>
+
+<!-- set the "lang" attribute to English to specify the language of this file's text content -->
+<html lang="en">
+
+<head>
+    <!-- provide the metadata for the web page corresponding to this file (set the character encoding, specify the view of the page on devices of different sizes) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- define a title for the web page (that will appear in the browser) --> 
+    <title>Top Music Schools in Canada</title>
+    <!-- provide links to the local style.css file and the external Bootstrap CSS library (which specify the style of the page) --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- define the navbar using https://getbootstrap.com/docs/5.3/components/navbar/  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- define the title for the navbar as "Pages" and specify that the web page should not redirect when this title is clicked --> 
+          <a class="navbar-brand" href="#">Pages</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- specify that the web page should not redirect when "Home" is clicked in the navbar while on the "Home" page -->
+                <!-- specify that the "Home" button of the navbar should be highlighted while on the "Home" page  -->
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <!-- specify that the web page should redirect to the local contact.html file when "Contact" is clicked in the navbar while on the "Home" page -->
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More Info
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- specify that the web page should redirect to the local clarinet.html file when "More about Bb Clarinet" is clicked in the dropdown menu of the navbar while on the "Home" page -->
+                  <li><a class="dropdown-item" href="clarinet.html">More about Bb Clarinet</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <!-- specify that the web page should redirect to the local learning.html file when "Learning Music in Canada" is clicked in the dropdown menu of the navbar while on the "Home" page -->
+                  <li><a class="dropdown-item" href="learning.html">Learning Music in Canada</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- define a new section with a "container" class that allows the use of the Bootstrap grid system -->
+    <div class="container"> 
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center"> 
+        <!-- define a new column which takes up 8 Bootstrap column units --> 
+        <div class="col-8">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- specify text to be displayed at a heading 1 level -->
+            <h1>Top Music Schools in Canada</h1>
+          </div>
+        </div> 
+      </div>
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center">
+        <!-- define a new column which takes up 8 Bootstrap column units -->
+        <div class="col-8">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- specify text to be displayed at a paragraph level -->
+            <p>
+              Click here to see a GeoJSON file containing information about the top 10 music schools in Canada:
+              <!-- include a link which opens the local data.geojson file in a new window -->
+              <a target=”_blank” href="data.geojson">New Window</a>
+              <!-- on a new line, include a link which opens the "College Gazette" page in the same window -->
+              <br>according to <a href="https://collegegazette.com/best-music-schools-in-canada/">College Gazette</a>
+            </p>
+           </div>  
+        </div>     
+      </div>
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center">
+        <!-- define a new column which takes up 8 Bootstrap column units -->
+        <div class="col-8">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- include the local uoft_faculty_of_music.png image on the page -->
+            <img src="uoft_faculty_of_music.png" width="500" height="400">
+            <!-- specify text to be displayed at a paragraph level with a link that opens the 'UofT News' page in the same window-->
+            <p>
+              Source: <a href="https://www.utoronto.ca/news/u-t-faculty-music-accepts-recommendations-climate-and-culture-review">UofT News</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center"> 
+        <!-- define a new column which takes up 8 Bootstrap column units -->
+        <div class="col-8">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- specify text to be displayed at a heading 2 level -->
+            <h2>GeoJSON vs. Shapefile</h2>
+          </div>
+        </div> 
+      </div>
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center">
+        <!-- define a new column which takes up 2 Bootstrap column units -->
+        <div class="col-2">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- specify text to be displayed at a heading 4 level -->
+            <h4>
+              GeoJSON
+            </h4>
+          </div>
+          <!-- specify text to be displayed in an unordered (bullet point) list -->
+          <ul>
+            <li>Larger file size</li>
+            <li>No spatial index</li>
+            <li>Text-based format (human readable)</li>
+            <li>Single-file format</li>
+          </ul>
+        </div>
+        <!-- define a new column which takes up 2 Bootstrap column units -->
+        <div class="col-2">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- specify text to be displayed at a heading 4 level -->
+            <h4>
+              Shapefile
+            </h4>
+          </div>
+          <!-- specify text to be displayed in an unordered (bullet point) list -->
+          <ul>
+            <li>Smaller file size</li>
+            <li>Allow spatial index</li>
+            <li>Binary format (not human readable)</li>
+            <li>Multi-file format</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center">
+        <!-- define a new column which takes up 8 Bootstrap column units -->
+        <div class="col-8">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- specify text to be displayed at a heading 2 level -->
+            <h2>
+              Do you remember your music theory?
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center">
+        <!-- define a new column which takes up 8 Bootstrap column units -->
+        <div class="col-8">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- specify text to be displayed at a paragraph level -->
+            <p>
+              While you're here, refresh your music theory knowledge!
+              <br>Enter one of the following notes in concert pitch to find out the transposed pitch on Bb clarinet!
+              <!-- create/span a section within the paragraph which will contain text from the Javascript file   -->
+              <br><span id="note_list"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center">
+        <!-- define a new column which takes up 8 Bootstrap column units -->
+        <div class="col-8"> 
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- create a form with a submit button into which the user can submit text -->
+            <form id="form">
+              <label for="note">Enter note in concert pitch:</label><br>
+              <input type="text" id="note1" name="note"><br>
+              <input type="submit" value="Submit" id="submit">
+            </form>
+            <!-- specify text to be displayed at a paragraph level and create/span a section within the paragraph which will contain text from the Javascript file  -->
+            <br><p>On Bb Clarinet, this note sounds like: <span id="clarinet"></span></p>
+          </div>
+        </div> 
+      </div>
+
+      <!-- define a new row and centre all content of the row -->
+      <div class="row justify-content-center">
+        <!-- define a new column which takes up 8 Bootstrap column units -->
+        <div class="col-8">
+          <!-- define a new section within the column which has centered text within it -->
+          <div class="text-center">
+            <!-- specify text to be displayed at a heading 3 level -->
+            <h3>
+              Rate
+            </h3>
+            <!-- specify text to be displayed at a paragraph level -->
+            <p>
+              Please give this page a thumbs up if you like it!
+            </p>
+            <!-- create 2 buttons which contain local embedded thumbs_up.png and thumbs_down.png images -->
+            <button type="button" class="btn btn-primary"  
+              id = "like"><img src="thumbs_up.jpeg" width="30" height="30">
+            </button>
+            <button type="button" class="btn btn-primary"  
+              id = "dislike"><img src="thumbs_down.jpeg" width="30" height="30">
+            </button>
+            <!-- specify text to be displayed at a paragraph level and create/span a section within the paragraph which will contain text from the Javascript file  -->
+            <p>
+              Number of likes: <span id="like_no"></span>
+              <br>Number of dislikes: <span id="dislike_no"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- provide links to the local script.js file and the external Bootstrap Javascript bundle (which allow the functionality of the page) --> 
+    <script src="script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
