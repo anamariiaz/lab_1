@@ -17,7 +17,7 @@ submit.addEventListener("click", function(e){
     if (note_list.includes(note)){
         //if the inputed value is one of the 12 musical pitches in note_list at an index of 2 or greater, insert "On Bb Clarinet, this note sounds like: " the note present at 2 indices prior into the html element with id "clarinet"
         if (note_list.indexOf(note)>1) {
-            document.getElementById("clarinet").innerHTML="On Bb Clarinet, this note sounds like: " + note_list[note_list.indexOf(note)-2].toString
+            document.getElementById("clarinet").innerHTML="On Bb Clarinet, this note sounds like: " + note_list[note_list.indexOf(note)-2].toString()
         } 
         //if the inputed value is the musical pitch in note_list at an index of 0, insert "On Bb Clarinet, this note sounds like: A#"" into the html element with id "clarinet"
         else if (note_list.indexOf(note)===0) {
@@ -25,7 +25,7 @@ submit.addEventListener("click", function(e){
         } 
         //if the inputed value is the 12 musical pitch in note_list at an index of 1, insert "On Bb Clarinet, this note sounds like: A" into the html element with id "clarinet"
         else if (note_list.indexOf(note)===1) {
-            document.getElementById("clarinet").innerHTML="On Bb Clarinet, this note sounds like: " + note_list[11].toString
+            document.getElementById("clarinet").innerHTML="On Bb Clarinet, this note sounds like: " + note_list[11].toString()
         }
     } 
     //if the inputed note is not one of the 12 musical pitches in note_list, insert "please input a valid note from the list above" into the html element with id "clarinet"
